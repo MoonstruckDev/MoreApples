@@ -23,6 +23,23 @@ public class ModItems {
                             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 8 * 60 * 20, 0), 1.0f)
                             .build())
             ));
+    public static final RegistryObject<Item> AMETHYST_APPLE = ITEMS.register("amethyst_apple",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(8)
+                            .saturationMod(8f)
+                            .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 8 * 60 * 20, 0), 1.0f)
+                            .build())
+            ));
+
+    public static final RegistryObject<Item> EMERALD_APPLE = ITEMS.register("emerald_apple",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)
+                    .food(new FoodProperties.Builder()
+                    .nutrition(8)
+                    .saturationMod(8f)
+                    .effect(() -> new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 8 * 60 * 20, 0), 3.0f)
+                    .build())
+            ));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
