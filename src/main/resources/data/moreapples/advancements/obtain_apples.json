@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:apple"
+    },
+    "title": "How Do You Like Them Apples?",
+    "description": "The future is apples!",
+    "background": "minecraft:textures/block/oak_leaves.png",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "moreapples:iron_apple",
+              "moreapples:amethyst_apple",
+              "moreapples:coal_apple",
+              "moreapples:emerald_apple"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

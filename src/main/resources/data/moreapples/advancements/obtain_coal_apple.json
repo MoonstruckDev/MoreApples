@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "moreapples:coal_apple"
+    },
+    "title": "They Yearn For The Mines",
+    "description": "Obtain a coal apple.",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "moreapples:obtain_apples",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "moreapples:coal_apple"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 50
+  }
+}

@@ -1,15 +1,19 @@
 package net.moonstruck.moreapples.item;
 
+import net.minecraft.advancements.Advancement;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.moonstruck.moreapples.config.MoreApplesCommonConfigs;
+import net.moonstruck.moreapples.item.custom.CoalAppleItem;
 import net.moonstruck.moreapples.moreapples;
 
 public class ModItems {
@@ -43,10 +47,8 @@ public class ModItems {
             ));
 
     public static final RegistryObject<Item> COAL_APPLE = ITEMS.register("coal_apple",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)
+            () -> new CoalAppleItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC)
             ));
-
-
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

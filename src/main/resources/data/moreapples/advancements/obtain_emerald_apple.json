@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "moreapples:emerald_apple"
+    },
+    "title": "An apple a day keeps the villager away",
+    "description": "Obtain an emerald apple.",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "moreapples:obtain_apples",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "moreapples:emerald_apple"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 50
+  }
+}

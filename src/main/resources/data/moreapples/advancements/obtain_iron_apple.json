@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "moreapples:iron_apple"
+    },
+    "title": "Iron Man's Favourite Fruit",
+    "description": "Obtain an iron apple.",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "moreapples:obtain_apples",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "moreapples:iron_apple"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 50
+  }
+}
