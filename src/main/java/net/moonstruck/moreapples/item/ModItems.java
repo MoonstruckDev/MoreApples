@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.moonstruck.moreapples.config.MoreApplesCommonConfigs;
 import net.moonstruck.moreapples.moreapples;
 
 public class ModItems {
@@ -35,11 +36,17 @@ public class ModItems {
     public static final RegistryObject<Item> EMERALD_APPLE = ITEMS.register("emerald_apple",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)
                     .food(new FoodProperties.Builder()
-                    .nutrition(8)
-                    .saturationMod(8f)
-                    .effect(() -> new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 8 * 60 * 20, 0), 3.0f)
-                    .build())
+                            .nutrition(8)
+                            .saturationMod(8f)
+                            .effect(() -> new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 8 * 60 * 20, 0), 3.0f)
+                            .build())
             ));
+
+    public static final RegistryObject<Item> COAL_APPLE = ITEMS.register("coal_apple",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)
+            ));
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
