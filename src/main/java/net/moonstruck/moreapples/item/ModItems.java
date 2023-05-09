@@ -50,6 +50,30 @@ public class ModItems {
             () -> new CoalAppleItem(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
             ));
 
+    public static final RegistryObject<Item> COPPER_APPLE = ITEMS.register("copper_apple",
+            () -> new CoalAppleItem(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+            ));
+
+
+    public static final RegistryObject<Item> LAPIS_APPLE = ITEMS.register("lapis_apple",
+            () -> new CoalAppleItem(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+            ));
+
+    public static final RegistryObject<Item> QUARTZ_APPLE = ITEMS.register("quartz_apple",
+            () -> new CoalAppleItem(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+            ));
+
+    public static final RegistryObject<Item> NETHERITE_APPLE = ITEMS.register("netherite_apple",
+            () -> new CoalAppleItem(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+            ));
+
+    public static final RegistryObject<Item> REDSTONE_APPLE = ITEMS.register("redstone_apple",
+            () -> new CoalAppleItem(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+            ));
+
+
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
