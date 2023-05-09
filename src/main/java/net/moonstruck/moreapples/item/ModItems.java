@@ -21,7 +21,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, moreapples.MOD_ID);
 
     public static final RegistryObject<Item> IRON_APPLE = ITEMS.register("iron_apple",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
                             .nutrition(8)
                             .saturationMod(8f)
@@ -29,7 +29,7 @@ public class ModItems {
                             .build())
             ));
     public static final RegistryObject<Item> AMETHYST_APPLE = ITEMS.register("amethyst_apple",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
                             .nutrition(8)
                             .saturationMod(8f)
@@ -38,7 +38,7 @@ public class ModItems {
             ));
 
     public static final RegistryObject<Item> EMERALD_APPLE = ITEMS.register("emerald_apple",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
                             .nutrition(8)
                             .saturationMod(8f)
@@ -47,7 +47,7 @@ public class ModItems {
             ));
 
     public static final RegistryObject<Item> COAL_APPLE = ITEMS.register("coal_apple",
-            () -> new CoalAppleItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC)
+            () -> new CoalAppleItem(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
             ));
 
     public static void register(IEventBus eventBus) {
