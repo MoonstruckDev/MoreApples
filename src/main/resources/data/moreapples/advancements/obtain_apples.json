@@ -3,11 +3,11 @@
     "icon": {
       "item": "minecraft:apple"
     },
-    "title": "How Do You Like Them Apples?",
+    "title": "More Apples",
     "description": "The future is apples!",
     "background": "minecraft:textures/block/oak_leaves.png",
-    "show_toast": true,
-    "announce_to_chat": true,
+    "show_toast": false,
+    "announce_to_chat": false,
     "hidden": false
   },
   "criteria": {
@@ -20,6 +20,12 @@
               "moreapples:iron_apple",
               "moreapples:amethyst_apple",
               "moreapples:coal_apple",
+              "moreapples:redstone_apple",
+              "moreapples:diamond_apple",
+              "moreapples:quartz_apple",
+              "moreapples:copper_apple",
+              "moreapples:lapis_apple",
+              "moreapples:netherite_apple",
               "moreapples:emerald_apple"
             ]
           }

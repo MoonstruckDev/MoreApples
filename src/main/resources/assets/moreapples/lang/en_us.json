@@ -3,6 +3,23 @@
   "item.moreapples.amethyst_apple": "Amethyst Apple",
   "item.moreapples.emerald_apple": "Emerald Apple",
   "item.moreapples.coal_apple": "Coal Apple",
+  "item.moreapples.redstone_apple": "Redstone Apple",
+  "item.moreapples.netherite_apple": "Netherite Apple",
+  "item.moreapples.quartz_apple": "Quartz Apple",
+  "item.moreapples.copper_apple": "Copper Apple",
+  "item.moreapples.lapis_apple": "Lapis Apple",
+  "item.moreapples.diamond_apple": "Diamond Apple",
+  "item.moreapples.enchanted_redstone_apple": "Enchanted Redstone Apple",
+  "item.moreapples.enchanted_iron_apple": "Enchanted Iron Apple",
+  "item.moreapples.enchanted_amethyst_apple": "Enchanted Amethyst Apple",
+  "item.moreapples.enchanted_emerald_apple": "Enchanted Emerald Apple",
+  "item.moreapples.enchanted_coal_apple": "Enchanted Coal Apple",
+  "item.moreapples.enchanted_netherite_apple": "Enchanted Netherite Apple",
+  "item.moreapples.enchanted_quartz_apple": "Enchanted Quartz Apple",
+  "item.moreapples.enchanted_copper_apple": "Enchanted Copper Apple",
+  "item.moreapples.enchanted_lapis_apple": "Enchanted Lapis Apple",
+  "item.moreapples.enchanted_diamond_apple": "Enchanted Diamond Apple",
+
 
   "itemGroup.MoreApples" : "More Apples"
 }
