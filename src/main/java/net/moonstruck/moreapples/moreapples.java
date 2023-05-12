@@ -1,5 +1,6 @@
 package net.moonstruck.moreapples;
 
+
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
@@ -10,8 +11,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.moonstruck.moreapples.config.MoreApplesCommonConfigs;
 import net.moonstruck.moreapples.item.ModItems;
+import net.moonstruck.moreapples.event.loot.ModLootModifiers;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -29,7 +30,7 @@ public class moreapples
 
         modEventBus.addListener(this::commonSetup);
 
-        MoreApplesCommonConfigs.init();
+        ModLootModifiers.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

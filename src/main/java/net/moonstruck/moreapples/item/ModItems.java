@@ -1,33 +1,27 @@
 package net.moonstruck.moreapples.item;
-
-import net.minecraft.advancements.Advancement;
+import net.minecraft.client.renderer.EffectInstance;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.moonstruck.moreapples.config.MoreApplesCommonConfigs;
 import net.moonstruck.moreapples.item.custom.CoalAppleItem;
 import net.moonstruck.moreapples.item.custom.EnchantedAppleItem;
-import net.moonstruck.moreapples.item.custom.SurpriseAppleItem;
 import net.moonstruck.moreapples.moreapples;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, moreapples.MOD_ID);
-
     public static final RegistryObject<Item> IRON_APPLE = ITEMS.register("iron_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
                             .nutrition(8)
                             .saturationMod(8f)
-                            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 8 * 60 * 20, 0), 1.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2 * 60 * 20, 0), 1.0f)
                             .build())
             ));
     public static final RegistryObject<Item> AMETHYST_APPLE = ITEMS.register("amethyst_apple",
@@ -35,7 +29,7 @@ public class ModItems {
                     .food(new FoodProperties.Builder()
                             .nutrition(8)
                             .saturationMod(8f)
-                            .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 8 * 60 * 20, 0), 1.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 2 * 60 * 20, 0), 1.0f)
                             .build())
             ));
 
@@ -44,7 +38,7 @@ public class ModItems {
                     .food(new FoodProperties.Builder()
                             .nutrition(8)
                             .saturationMod(8f)
-                            .effect(() -> new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 8 * 60 * 20, 0), 3.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 2 * 60 * 20, 0), 3.0f)
                             .build())
             ));
 
@@ -54,15 +48,30 @@ public class ModItems {
 
     public static final RegistryObject<Item> COPPER_APPLE = ITEMS.register("copper_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationMod(0.6F)
+                            .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 2 * 60 * 20, 1), 1.0F)
+                            .build())
             ));
 
 
     public static final RegistryObject<Item> LAPIS_APPLE = ITEMS.register("lapis_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(8)
+                            .saturationMod(8f)
+                            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 2 * 60 * 20, 0), 3.0f)
+                            .build())
             ));
 
     public static final RegistryObject<Item> QUARTZ_APPLE = ITEMS.register("quartz_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(8)
+                            .saturationMod(8f)
+                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2 * 60 * 20, 0), 3.0f)
+                            .build())
             ));
 
     public static final RegistryObject<Item> NETHERITE_APPLE = ITEMS.register("netherite_apple",
@@ -73,20 +82,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
             ));
 
-    public static final RegistryObject<Item> SURPRISE_APPLE = ITEMS.register("surprise_apple",
-            () -> new SurpriseAppleItem(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
-                    .food(new FoodProperties.Builder()
-                            .nutrition(8)
-                            .saturationMod(8f)
-                            .build())
-            ));
-
-
 
     // Enchanted Variants
-    public static final RegistryObject<Item> ENCHANTED_REDSTONE_APPLE = ITEMS.register("enchanted_redstone_apple",
-            () -> new EnchantedAppleItem("redstone_apple",new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
-            ));
+
     public static final RegistryObject<Item> ENCHANTED_IRON_APPLE = ITEMS.register("enchanted_iron_apple",
             () -> new EnchantedAppleItem("iron_apple", new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
@@ -134,9 +132,10 @@ public class ModItems {
             () -> new EnchantedAppleItem("netherite_apple",new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
             ));
 
-
-
-
+    public static final RegistryObject<Item> ENCHANTED_REDSTONE_APPLE = ITEMS.register("enchanted_redstone_apple",
+            () -> new EnchantedAppleItem("redstone_apple",new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+            ));
+    
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
