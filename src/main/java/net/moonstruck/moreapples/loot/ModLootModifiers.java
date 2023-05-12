@@ -16,8 +16,8 @@ public class ModLootModifiers {
     public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ADD_ITEM =
             LOOT_MODIFIER_SERIALIZERS.register("add_item", AddItemModifier.CODEC);
 
-    public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ENCHANTED_APPLES_IN_CHESTS =
-            LOOT_MODIFIER_SERIALIZERS.register("enchanted_apples_in_chests", EnchantedApplesInChests.CODEC);
+    public static final RegistryObject<Codec<? extends IGlobalLootModifier>> BLUEBERRIES_IN_DESERT_CHESTS =
+            LOOT_MODIFIER_SERIALIZERS.register("blueberries_in_desert_chests", BlueberriesInDesertChests.CODEC);
 
 
 
