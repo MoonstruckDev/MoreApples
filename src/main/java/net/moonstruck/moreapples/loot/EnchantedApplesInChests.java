@@ -1,4 +1,4 @@
-package net.moonstruck.moreapples.event.loot;
+package net.moonstruck.moreapples.loot;
 
 import com.google.common.base.Suppliers;
 import com.mojang.serialization.Codec;
