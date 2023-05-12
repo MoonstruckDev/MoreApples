@@ -15,13 +15,13 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
-public class BlueberriesInDesertChests extends LootModifier {
-    public static final Supplier<Codec<BlueberriesInDesertChests>> CODEC = Suppliers.memoize(()
+public class RedstoneAppleInDesertChest extends LootModifier {
+    public static final Supplier<Codec<RedstoneAppleInDesertChest>> CODEC = Suppliers.memoize(()
             -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
-            .fieldOf("item").forGetter(m -> m.item)).apply(inst, BlueberriesInDesertChests::new)));
+            .fieldOf("item").forGetter(m -> m.item)).apply(inst, RedstoneAppleInDesertChest::new)));
     private final Item item;
 
-    protected BlueberriesInDesertChests(LootItemCondition[] conditionsIn, Item item) {
+    protected RedstoneAppleInDesertChest(LootItemCondition[] conditionsIn, Item item) {
         super(conditionsIn);
         this.item = item;
     }
