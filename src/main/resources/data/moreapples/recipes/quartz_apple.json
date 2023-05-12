@@ -7,13 +7,13 @@
   ],
   "key": {
     "C": {
-      "item": "minecraft:nether_quartz"
+      "item": "minecraft:quartz"
     },
     "A": {
       "item": "minecraft:apple"
     }
   },
   "result": {
-    "item": "moreapples:coal_apple"
+    "item": "moreapples:quartz_apple"
   }
 }
