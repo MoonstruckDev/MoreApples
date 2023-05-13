@@ -3,6 +3,7 @@ package net.moonstruck.moreapples.item.custom;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
+import org.jetbrains.annotations.NotNull;
 
 
 public class EnchantedAppleItem extends Item {
@@ -14,12 +15,8 @@ public class EnchantedAppleItem extends Item {
     }
 
     @Override
-    public Rarity getRarity(ItemStack stack) {
-        return Rarity.EPIC;
-    }
+    public @NotNull Rarity getRarity(@NotNull ItemStack stack) { return Rarity.EPIC; }
 
     @Override
-    public boolean isFoil(ItemStack stack) {
-        return true;
-    }
+    public boolean isFoil(@NotNull ItemStack stack) { return true; }
 }
