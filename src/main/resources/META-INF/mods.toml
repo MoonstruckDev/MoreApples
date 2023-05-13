@@ -60,6 +60,6 @@ description='''Ever felt like there wasn't enough ore based apples? well I've go
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="[1.19.2]" #"[1.19.2,1.20)" changed because MC 1.19.3 ++ you has a different way to modify the Loot-Tables
+    versionRange="[1.19.2]" #"[1.19.2,1.20)" changed because MC 1.19.3 ++ has a different way to modify the Loot-Tables
     ordering="NONE"
     side="BOTH"
