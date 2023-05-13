@@ -29,6 +29,7 @@ public class RedstoneAppleInDesertChest extends LootModifier {
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
         if(context.getRandom().nextFloat() >= 1.0f) {
+
             generatedLoot.add(new ItemStack(item, 10));
         }
         return generatedLoot;
