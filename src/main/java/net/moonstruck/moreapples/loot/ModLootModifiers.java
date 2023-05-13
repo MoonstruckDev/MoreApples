@@ -7,7 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import static net.moonstruck.moreapples.moreapples.MOD_ID;
+import static net.moonstruck.moreapples.MoreApples.MOD_ID;
 
 public class ModLootModifiers {
     public static final DeferredRegister<Codec<? extends IGlobalLootModifier>> LOOT_MODIFIER_SERIALIZERS =
@@ -20,8 +20,5 @@ public class ModLootModifiers {
             LOOT_MODIFIER_SERIALIZERS.register("redstone_apple_in_desert_chest", RedstoneAppleInDesertChest.CODEC);
 
 
-
-    public static void register(IEventBus bus) {
-        LOOT_MODIFIER_SERIALIZERS.register(bus);
-    }
+	public static void register(IEventBus modEventBus) { LOOT_MODIFIER_SERIALIZERS.register(modEventBus); }
 }
