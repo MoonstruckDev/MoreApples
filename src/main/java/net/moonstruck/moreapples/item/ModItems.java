@@ -76,6 +76,24 @@ public class ModItems {
 
     public static final RegistryObject<Item> NETHERITE_APPLE = ITEMS.register("netherite_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(8)
+                            .saturationMod(8f)
+                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 4 * 60 * 20, 0), 3.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 4 * 60 * 20, 0), 3.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 4 * 60 * 20, 0), 3.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 2 * 60 * 20, 0), 3.0f)
+                            .build())
+            ));
+
+    public static final RegistryObject<Item> DIAMOND_APPLE = ITEMS.register("diamond_apple",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(8)
+                            .saturationMod(8f)
+                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2 * 60 * 20, 0), 3.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2 * 60 * 20, 0), 3.0f)
+                            .build())
             ));
 
     public static final RegistryObject<Item> REDSTONE_APPLE = ITEMS.register("redstone_apple",
@@ -140,6 +158,7 @@ public class ModItems {
                             .nutrition(8)
                             .saturationMod(8f)
                             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2 * 60 * 20, 0), 3.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 0), 3.0f)
                             .build())
             ));
 

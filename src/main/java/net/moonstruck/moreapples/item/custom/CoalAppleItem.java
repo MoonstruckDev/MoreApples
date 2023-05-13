@@ -13,6 +13,7 @@ public class CoalAppleItem extends Item{
 
     @Override
     public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
-        return 14400;
+        if (itemStack.isEnchanted()) { return 28800; }
+        else return 14400;
     }
 }
