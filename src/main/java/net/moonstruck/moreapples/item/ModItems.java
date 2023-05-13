@@ -117,15 +117,30 @@ public class ModItems {
 
     public static final RegistryObject<Item> ENCHANTED_COPPER_APPLE = ITEMS.register("enchanted_copper_apple",
             () -> new EnchantedAppleItem("copper_apple",new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationMod(0.6F)
+                            .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 2 * 60 * 20, 1), 1.0F)
+                            .build())
             ));
 
 
     public static final RegistryObject<Item> ENCHANTED_LAPIS_APPLE = ITEMS.register("enchanted_lapis_apple",
             () -> new EnchantedAppleItem("lapis_apple",new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(8)
+                            .saturationMod(8f)
+                            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 2 * 60 * 20, 0), 3.0f)
+                            .build())
             ));
 
     public static final RegistryObject<Item> ENCHANTED_QUARTZ_APPLE = ITEMS.register("enchanted_quartz_apple",
             () -> new EnchantedAppleItem("quartz_apple",new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(8)
+                            .saturationMod(8f)
+                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2 * 60 * 20, 0), 3.0f)
+                            .build())
             ));
 
     public static final RegistryObject<Item> ENCHANTED_NETHERITE_APPLE = ITEMS.register("enchanted_netherite_apple",

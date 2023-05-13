@@ -15,7 +15,7 @@ public class EnchantedAppleItem extends Item {
 
     @Override
     public Rarity getRarity(ItemStack stack) {
-        return Rarity.UNCOMMON;
+        return Rarity.EPIC;
     }
 
     @Override
