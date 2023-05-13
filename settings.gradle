@@ -1,7 +1,14 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        maven { url = 'https://maven.minecraftforge.net/' }
-        maven { url = 'https://maven.parchmentmc.org' }
+
+        mavenCentral()
+        mavenLocal()
+
+        // maven { name = 'Parchment'; url = 'https://maven.parchmentmc.org' }
     }
 }
+
+rootProject.name = "More Apples - Forge"
+
+// include('Common', 'Forge', 'Fabric') // maybe later, if you want to create/publish a Fabric-Version

@@ -1,8 +1,7 @@
 package net.moonstruck.moreapples.item;
-import net.minecraft.client.renderer.EffectInstance;
+
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -11,12 +10,14 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.moonstruck.moreapples.item.custom.CoalAppleItem;
 import net.moonstruck.moreapples.item.custom.EnchantedAppleItem;
-import net.moonstruck.moreapples.moreapples;
+
+import static net.moonstruck.moreapples.MoreApples.MOD_ID;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, moreapples.MOD_ID);
-    public static final RegistryObject<Item> IRON_APPLE = ITEMS.register("iron_apple",
+            DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
+
+	public static final RegistryObject<Item> IRON_APPLE = ITEMS.register("iron_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
                             .nutrition(8)
@@ -43,8 +44,7 @@ public class ModItems {
             ));
 
     public static final RegistryObject<Item> COAL_APPLE = ITEMS.register("coal_apple",
-            () -> new CoalAppleItem(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
-            ));
+            () -> new CoalAppleItem(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)));
 
     public static final RegistryObject<Item> COPPER_APPLE = ITEMS.register("copper_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
@@ -84,7 +84,7 @@ public class ModItems {
                             .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 4 * 60 * 20, 0), 3.0f)
                             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 2 * 60 * 20, 0), 3.0f)
                             .build())
-            ));
+			));
 
     public static final RegistryObject<Item> DIAMOND_APPLE = ITEMS.register("diamond_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
@@ -97,12 +97,9 @@ public class ModItems {
             ));
 
     public static final RegistryObject<Item> REDSTONE_APPLE = ITEMS.register("redstone_apple",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
-            ));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)));
 
-
-    // Enchanted Variants
-
+    /** Enchanted Variants */
     public static final RegistryObject<Item> ENCHANTED_IRON_APPLE = ITEMS.register("enchanted_iron_apple",
             () -> new EnchantedAppleItem("iron_apple", new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
@@ -169,8 +166,6 @@ public class ModItems {
     public static final RegistryObject<Item> ENCHANTED_REDSTONE_APPLE = ITEMS.register("enchanted_redstone_apple",
             () -> new EnchantedAppleItem("redstone_apple",new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
             ));
-    
-    public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
-    }
+
+    public static void register(IEventBus modEventBus) { ITEMS.register(modEventBus); }
 }
