@@ -13,12 +13,12 @@ public class ModLootModifiers {
     public static final DeferredRegister<Codec<? extends IGlobalLootModifier>> LOOT_MODIFIER_SERIALIZERS =
             DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, MOD_ID);
 
-    public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ADD_ITEM =
-            LOOT_MODIFIER_SERIALIZERS.register("add_item", AddItemModifier.CODEC);
-
-    public static final RegistryObject<Codec<? extends IGlobalLootModifier>> REDSTONE_APPLE_IN_DESERT_CHEST =
-            LOOT_MODIFIER_SERIALIZERS.register("redstone_apple_in_desert_chest", RedstoneAppleInDesertChest.CODEC);
+    public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ENCHANTED_APPLES_IN_CHESTS =
+            LOOT_MODIFIER_SERIALIZERS.register( "enchanted_apples_in_chests", EnchantedApplesInChests.CODEC);
 
 
-	public static void register(IEventBus modEventBus) { LOOT_MODIFIER_SERIALIZERS.register(modEventBus); }
+
+    public static void register(IEventBus bus) {
+        LOOT_MODIFIER_SERIALIZERS.register(bus);
+    }
 }
