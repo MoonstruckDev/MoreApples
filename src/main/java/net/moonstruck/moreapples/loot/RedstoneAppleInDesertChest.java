@@ -16,8 +16,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.function.Supplier;
 
 public class RedstoneAppleInDesertChest extends LootModifier {
-    public static final Supplier<Codec<RedstoneAppleInDesertChest>> CODEC = Suppliers.memoize(()
-            -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
+    public static final Supplier<Codec<RedstoneAppleInDesertChest>> CODEC = Suppliers.memoize(
+			() -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
             .fieldOf("item").forGetter(m -> m.item)).apply(inst, RedstoneAppleInDesertChest::new)));
     private final Item item;
 
@@ -28,14 +28,12 @@ public class RedstoneAppleInDesertChest extends LootModifier {
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() >= 1f) {
+        if(context.getRandom().nextFloat() >= 1.0f) {
             generatedLoot.add(new ItemStack(item, 10));
         }
         return generatedLoot;
     }
 
     @Override
-    public Codec<? extends IGlobalLootModifier> codec() {
-        return CODEC.get();
-    }
+    public Codec<? extends IGlobalLootModifier> codec() { return CODEC.get(); }
 }
