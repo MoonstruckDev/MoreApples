@@ -5,6 +5,7 @@
     },
     "title": "They Yearn For The Mines",
     "description": "Obtain a Coal Apple.",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
