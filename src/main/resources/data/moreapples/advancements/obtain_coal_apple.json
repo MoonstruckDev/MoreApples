@@ -4,14 +4,15 @@
       "item": "moreapples:coal_apple"
     },
     "title": "They Yearn For The Mines",
-    "description": "Obtain a coal apple.",
+    "description": "Obtain a Coal Apple.",
     "show_toast": true,
-    "announce_to_chat": true
+    "announce_to_chat": true,
+    "hidden": true
   },
   "parent": "moreapples:obtain_apples",
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:inventory_changed",
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "items": [
           {

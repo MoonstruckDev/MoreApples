@@ -1,0 +1,82 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:enchanted_amethyst_apple"
+    },
+    "title": "Damn, you really hate doctors?",
+    "description": "The future is apples!",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["moreapples:iron_apple"]
+          },
+          {
+            "items": ["moreapples:amethyst_apple"]
+          },
+          {
+            "items": ["moreapples:coal_apple"]
+          },
+          {
+            "items": ["moreapples:redstone_apple"]
+          },
+          {
+            "items": ["moreapples:diamond_apple"]
+          },
+          {
+            "items": ["moreapples:quartz_apple"]
+          },
+          {
+            "items": ["moreapples:copper_apple"]
+          },
+          {
+            "items": ["moreapples:lapis_apple"]
+          },
+          {
+            "items": ["moreapples:netherite_apple"]
+          },
+          {
+            "items": ["moreapples:emerald_apple"]
+          },
+          {
+            "items": ["moreapples:enchanted_iron_apple"]
+          },
+          {
+            "items": ["moreapples:enchanted_amethyst_apple"]
+          },
+          {
+            "items": ["moreapples:enchanted_coal_apple"]
+          },
+          {
+            "items": ["moreapples:enchanted_redstone_apple"]
+          },
+          {
+            "items": ["moreapples:enchanted_diamond_apple"]
+          },
+          {
+            "items": ["moreapples:enchanted_quartz_apple"]
+          },
+          {
+            "items": ["moreapples:enchanted_copper_apple"]
+          },
+          {
+            "items": ["moreapples:enchanted_lapis_apple"]
+          },
+          {
+            "items": ["moreapples:enchanted_netherite_apple"]
+          },
+          {
+            "items": ["moreapples:enchanted_emerald_apple"]
+          }
+        ]
+      }
+    }
+  }
+
+}
