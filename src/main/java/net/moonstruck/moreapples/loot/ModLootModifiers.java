@@ -16,6 +16,9 @@ public class ModLootModifiers {
     public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ENCHANTED_APPLES_IN_CHESTS =
             LOOT_MODIFIER_SERIALIZERS.register( "enchanted_apples_in_chests", EnchantedApplesInChests.CODEC);
 
+    public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ENCHANTED_NETHERITE_APPLE_IN_BASTION_CHESTS =
+            LOOT_MODIFIER_SERIALIZERS.register( "enchanted_netherite_apple_in_bastion_chests", EnchantedNetheriteAppleInBastionChests.CODEC);
+
 
 
     public static void register(IEventBus bus) {

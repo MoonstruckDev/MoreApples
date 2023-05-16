@@ -1,6 +1,7 @@
 {
   "replace": false,
   "entries": [
-    "moreapples:enchanted_apples_in_chests"
+    "moreapples:enchanted_apples_in_chests",
+    "moreapples:enchanted_netherite_apple_in_bastion_chests"
   ]
 }
