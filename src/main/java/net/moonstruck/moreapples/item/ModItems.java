@@ -20,16 +20,17 @@ public class ModItems {
 	public static final RegistryObject<Item> IRON_APPLE = ITEMS.register("iron_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
-                            .nutrition(8)
-                            .saturationMod(8f)
+                            .nutrition(4)
+                            .saturationMod(2.4f)
                             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2 * 60 * 20, 0), 1.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 25 * 20, 1), 1.0f)
                             .build())
             ));
     public static final RegistryObject<Item> AMETHYST_APPLE = ITEMS.register("amethyst_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
-                            .nutrition(8)
-                            .saturationMod(8f)
+                            .nutrition(4)
+                            .saturationMod(2.4f)
                             .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 2 * 60 * 20, 0), 1.0f)
                             .build())
             ));
@@ -37,20 +38,26 @@ public class ModItems {
     public static final RegistryObject<Item> EMERALD_APPLE = ITEMS.register("emerald_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
-                            .nutrition(8)
-                            .saturationMod(8f)
+                            .nutrition(4)
+                            .saturationMod(2.4f)
                             .effect(() -> new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 2 * 60 * 20, 0), 3.0f)
                             .build())
             ));
 
     public static final RegistryObject<Item> COAL_APPLE = ITEMS.register("coal_apple",
-            () -> new CoalAppleItem(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)));
+            () -> new CoalAppleItem(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationMod(2.4f)
+                            .effect(() -> new MobEffectInstance(MobEffects.DARKNESS, 1 * 60 * 20, 0), 3.0f)
+                            .build())
+            ));
 
     public static final RegistryObject<Item> COPPER_APPLE = ITEMS.register("copper_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
                             .nutrition(4)
-                            .saturationMod(0.6F)
+                            .saturationMod(2.4f)
                             .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 2 * 60 * 20, 1), 1.0F)
                             .build())
             ));
@@ -59,8 +66,8 @@ public class ModItems {
     public static final RegistryObject<Item> LAPIS_APPLE = ITEMS.register("lapis_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
-                            .nutrition(8)
-                            .saturationMod(8f)
+                            .nutrition(4)
+                            .saturationMod(2.4f)
                             .effect(() -> new MobEffectInstance(MobEffects.LUCK, 2 * 60 * 20, 0), 3.0f)
                             .build())
             ));
@@ -68,8 +75,8 @@ public class ModItems {
     public static final RegistryObject<Item> QUARTZ_APPLE = ITEMS.register("quartz_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
-                            .nutrition(8)
-                            .saturationMod(8f)
+                            .nutrition(4)
+                            .saturationMod(2.4f)
                             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2 * 60 * 20, 0), 3.0f)
                             .build())
             ));
@@ -77,8 +84,8 @@ public class ModItems {
     public static final RegistryObject<Item> NETHERITE_APPLE = ITEMS.register("netherite_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
-                            .nutrition(8)
-                            .saturationMod(8f)
+                            .nutrition(4)
+                            .saturationMod(2.4f)
                             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 4 * 60 * 20, 0), 3.0f)
                             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 4 * 60 * 20, 0), 3.0f)
                             .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 4 * 60 * 20, 0), 3.0f)
@@ -89,30 +96,37 @@ public class ModItems {
     public static final RegistryObject<Item> DIAMOND_APPLE = ITEMS.register("diamond_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
-                            .nutrition(8)
-                            .saturationMod(8f)
+                            .nutrition(4)
+                            .saturationMod(2.4f)
                             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2 * 60 * 20, 0), 3.0f)
                             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2 * 60 * 20, 0), 3.0f)
                             .build())
             ));
 
     public static final RegistryObject<Item> REDSTONE_APPLE = ITEMS.register("redstone_apple",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationMod(2.4f)
+                            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2 * 60 * 20, 0), 3.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 25 * 20, 1), 1.0f)
+                            .build())
+            ));
 
     /** Enchanted Variants */
     public static final RegistryObject<Item> ENCHANTED_IRON_APPLE = ITEMS.register("enchanted_iron_apple",
             () -> new EnchantedAppleItem("iron_apple", new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
-                            .nutrition(8)
-                            .saturationMod(8f)
+                            .nutrition(4)
+                            .saturationMod(2.4f)
                             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 8 * 60 * 20, 0), 1.0f)
                             .build())
             ));
     public static final RegistryObject<Item> ENCHANTED_AMETHYST_APPLE = ITEMS.register("enchanted_amethyst_apple",
             () -> new EnchantedAppleItem("amethyst_apple",new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
-                            .nutrition(8)
-                            .saturationMod(8f)
+                            .nutrition(4)
+                            .saturationMod(2.4f)
                             .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 8 * 60 * 20, 0), 1.0f)
                             .build())
             ));
@@ -120,22 +134,27 @@ public class ModItems {
     public static final RegistryObject<Item> ENCHANTED_EMERALD_APPLE = ITEMS.register("enchanted_emerald_apple",
             () -> new EnchantedAppleItem("emerald",new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
-                            .nutrition(8)
-                            .saturationMod(8f)
+                            .nutrition(4)
+                            .saturationMod(2.4f)
                             .effect(() -> new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 8 * 60 * 20, 0), 3.0f)
                             .build())
             ));
 
     public static final RegistryObject<Item> ENCHANTED_COAL_APPLE = ITEMS.register("enchanted_coal_apple",
             () -> new EnchantedAppleItem("coal_apple",new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationMod(2.4f)
+                            .effect(() -> new MobEffectInstance(MobEffects.DARKNESS, 2 * 60 * 20, 0), 3.0f)
+                            .build())
             ));
 
     public static final RegistryObject<Item> ENCHANTED_COPPER_APPLE = ITEMS.register("enchanted_copper_apple",
             () -> new EnchantedAppleItem("copper_apple",new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
                             .nutrition(4)
-                            .saturationMod(0.6F)
-                            .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 2 * 60 * 20, 1), 1.0F)
+                            .saturationMod(2.4f)
+                            .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 6 * 60 * 20, 1), 1.0F)
                             .build())
             ));
 
@@ -143,17 +162,17 @@ public class ModItems {
     public static final RegistryObject<Item> ENCHANTED_LAPIS_APPLE = ITEMS.register("enchanted_lapis_apple",
             () -> new EnchantedAppleItem("lapis_apple",new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
-                            .nutrition(8)
-                            .saturationMod(8f)
-                            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 2 * 60 * 20, 0), 3.0f)
+                            .nutrition(4)
+                            .saturationMod(2.4f)
+                            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 6 * 60 * 20, 0), 3.0f)
                             .build())
             ));
 
     public static final RegistryObject<Item> ENCHANTED_QUARTZ_APPLE = ITEMS.register("enchanted_quartz_apple",
             () -> new EnchantedAppleItem("quartz_apple",new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
                     .food(new FoodProperties.Builder()
-                            .nutrition(8)
-                            .saturationMod(8f)
+                            .nutrition(4)
+                            .saturationMod(2.4f)
                             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2 * 60 * 20, 0), 3.0f)
                             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 0), 3.0f)
                             .build())
@@ -161,10 +180,24 @@ public class ModItems {
 
     public static final RegistryObject<Item> ENCHANTED_NETHERITE_APPLE = ITEMS.register("enchanted_netherite_apple",
             () -> new EnchantedAppleItem("netherite_apple",new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationMod(2.4f)
+                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 6 * 60 * 20, 0), 3.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 6 * 60 * 20, 0), 3.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6 * 60 * 20, 0), 3.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 3 * 60 * 20, 0), 3.0f)
+                            .build())
             ));
 
     public static final RegistryObject<Item> ENCHANTED_REDSTONE_APPLE = ITEMS.register("enchanted_redstone_apple",
             () -> new EnchantedAppleItem("redstone_apple",new Item.Properties().tab(ModCreativeModeTab.MOREAPPLES_TAB)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationMod(2.4f)
+                            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6 * 60 * 20, 0), 3.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 25 * 20, 1), 1.0f)
+                            .build())
             ));
 
     public static void register(IEventBus modEventBus) { ITEMS.register(modEventBus); }
