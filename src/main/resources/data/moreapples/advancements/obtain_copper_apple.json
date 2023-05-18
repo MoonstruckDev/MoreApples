@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "moreapples:copper_apple"
+    },
+    "title": "Finally! A good use for copper!",
+    "description": "Obtain a copper apple.",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "moreapples:obtain_apples",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "moreapples:copper_apple"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 50
+  }
+}

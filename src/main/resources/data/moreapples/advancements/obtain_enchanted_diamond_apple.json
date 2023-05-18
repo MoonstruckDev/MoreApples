@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "moreapples:enchanted_diamond_apple"
+    },
+    "title": "That's gotta hurt...",
+    "description": "Obtain a diamond apple.",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "moreapples:obtain_apples",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "moreapples:enchanted_diamond_apple"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 50
+  }
+}

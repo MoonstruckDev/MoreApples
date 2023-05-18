@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "moreapples:enchanted_lapis_apple"
+    },
+    "title": "Mmmm, tastes like blue raspberry!",
+    "description": "Obtain a lapis apple.",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "moreapples:obtain_apples",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "moreapples:enchanted_lapis_apple"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 50
+  }
+}

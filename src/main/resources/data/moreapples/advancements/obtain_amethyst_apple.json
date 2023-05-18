@@ -3,6 +3,7 @@
     "icon": {
       "item": "moreapples:amethyst_apple"
     },
+    "parent": "moreapples:obtain_apples",
     "title": "A Crystal Gem?",
     "description": "Obtain an Amethyst Apple",
     "frame": "task",
@@ -10,20 +11,22 @@
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "moreapples:obtain_apples",
+
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:consume_item",
-      "conditions": {
-        "item": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
           "items": [
-            "moreapples:amethyst_apple"
+            {
+              "items": [
+                "moreapples:amethyst_apple"
+              ]
+            }
           ]
         }
       }
+    },
+    "rewards": {
+      "experience": 50
     }
-  },
-  "rewards": {
-    "experience": 50
   }
-}

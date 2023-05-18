@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "moreapples:enchanted_amethyst_apple"
+    },
+    "title": "A Crystal Gem?",
+    "description": "Obtain an amethyst apple.",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "moreapples:obtain_amethyst_apple",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "moreapples:enchanted_amethyst_apple"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 50
+  }
+}

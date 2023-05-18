@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "moreapples:redstone_apple"
+    },
+    "title": "Would it be strawberry flavoured?",
+    "description": "Obtain a redstone apple.",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "moreapples:obtain_apples",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "moreapples:redstone_apple"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 50
+  }
+}
