@@ -1,7 +1,16 @@
 {
   "replace": false,
   "entries": [
-    "moreapples:enchanted_apples_in_chests",
-    "moreapples:enchanted_netherite_apple_in_bastion_chests"
+    "moreapples:enchanted_amethyst_apple_in_end_city_chests",
+    "moreapples:enchanted_coal_apple_in_weaponsmith_chests",
+    "moreapples:enchanted_copper_apple_in_toolsmith_chests",
+    "moreapples:enchanted_diamond_apple_in_stronghold_chests",
+    "moreapples:enchanted_emerald_apple_in_shipwreck_treasure_chests",
+    "moreapples:enchanted_lapis_apple_in_buried_treasure_chests",
+    "moreapples:enchanted_netherite_apple_in_bastion_chests",
+    "moreapples:enchanted_quartz_apple_in_ruined_portal_chests",
+    "moreapples:enchanted_redstone_apple_in_simple_dungeon_chests",
+    "moreapples:enchanted_iron_apple_in_desert_pyramid_chests",
+    "moreapples:enchanted_quartz_apple_in_nether_bridge_chests"
   ]
 }
