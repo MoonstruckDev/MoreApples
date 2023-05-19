@@ -15,21 +15,21 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
-public class EnchantedApplesInChests extends LootModifier {
-    public static final Supplier<Codec<EnchantedApplesInChests>> CODEC = Suppliers.memoize(
+public class EnchantedAmethystAppleInEndCityChests extends LootModifier {
+    public static final Supplier<Codec<EnchantedAmethystAppleInEndCityChests>> CODEC = Suppliers.memoize(
             () -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
-                    .fieldOf("item").forGetter(m -> m.item)).apply(inst, EnchantedApplesInChests::new)));
+                    .fieldOf("item").forGetter(m -> m.item)).apply(inst, EnchantedAmethystAppleInEndCityChests::new)));
     private final Item item;
 
-    protected EnchantedApplesInChests(LootItemCondition[] conditionsIn, Item item) {
+    protected EnchantedAmethystAppleInEndCityChests(LootItemCondition[] conditionsIn, Item item) {
         super(conditionsIn);
         this.item = item;
     }
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() >= 0.25f) {
-            generatedLoot.add(new ItemStack(item, 2));
+        if(context.getRandom().nextFloat() >= 0.2f) {
+            generatedLoot.add(new ItemStack(item, 1));
         }
 
         return generatedLoot;

@@ -1,0 +1,10 @@
+{
+  "type": "moreapples:enchanted_quartz_apple_in_ruined_portal_chests",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ruined_portal"
+    }
+  ],
+  "item": "moreapples:enchanted_quartz_apple"
+}

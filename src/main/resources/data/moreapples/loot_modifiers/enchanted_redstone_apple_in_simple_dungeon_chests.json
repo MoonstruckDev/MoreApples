@@ -1,10 +1,10 @@
 {
-  "type": "moreapples:enchanted_apples_in_chests",
+  "type": "moreapples:enchanted_redstone_apple_in_simple_dungeon_chests",
   "conditions": [
     {
       "condition": "forge:loot_table_id",
       "loot_table_id": "minecraft:chests/simple_dungeon"
     }
   ],
-  "item": "moreapples:enchanted_emerald_apple"
+  "item": "moreapples:enchanted_redstone_apple"
 }

@@ -1,6 +1,16 @@
 {
   "replace": false,
   "values": [
-    "minecraft:chests/bastion_treasure"
+    "minecraft:chests/end_city_treasure",
+    "minecraft:chests/village/village_weaponsmith",
+    "minecraft:chests/village/toolsmith_chest",
+    "minecraft:chests/stronghold_library",
+    "minecraft:chests/shipwreck_treasure",
+    "minecraft:chests/desert_pyramid",
+    "minecraft:chests/buried_treasure",
+    "minecraft:chests/bastion_treasure",
+    "minecraft:chests/nether_bridge",
+    "minecraft:chests/ruined_portal",
+    "minecraft:chests/simple_dungeon"
   ]
 }

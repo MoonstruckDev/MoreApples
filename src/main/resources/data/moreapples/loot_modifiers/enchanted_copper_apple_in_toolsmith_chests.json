@@ -1,0 +1,10 @@
+{
+  "type": "moreapples:enchanted_copper_apple_in_toolsmith_chests",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/village/toolsmith_chest"
+    }
+  ],
+  "item": "moreapples:enchanted_copper_apple"
+}

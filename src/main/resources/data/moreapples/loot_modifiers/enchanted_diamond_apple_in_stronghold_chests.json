@@ -1,0 +1,10 @@
+{
+  "type": "moreapples:enchanted_diamond_apple_in_stronghold_chests",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/stronghold_library"
+    }
+  ],
+  "item": "moreapples:enchanted_diamond_apple"
+}

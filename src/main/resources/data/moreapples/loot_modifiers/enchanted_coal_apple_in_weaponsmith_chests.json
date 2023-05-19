@@ -1,0 +1,10 @@
+{
+  "type": "moreapples:enchanted_coal_apple_in_weaponsmith_chests",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/village/village_weaponsmith"
+    }
+  ],
+  "item": "moreapples:enchanted_coal_apple"
+}

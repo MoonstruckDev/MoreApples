@@ -1,0 +1,10 @@
+{
+  "type": "moreapples:enchanted_lapis_apple_in_buried_treasure_chests",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/buried_treasure"
+    }
+  ],
+  "item": "moreapples:enchanted_lapis_apple"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "moreapples:enchanted_iron_apple_in_desert_pyramid_chests",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/desert_pyramid"
+    }
+  ],
+  "item": "moreapples:enchanted_iron_apple"
+}

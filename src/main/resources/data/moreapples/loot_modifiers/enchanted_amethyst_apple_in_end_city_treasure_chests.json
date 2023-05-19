@@ -1,0 +1,10 @@
+{
+  "type": "moreapples:enchanted_amethyst_apple_in_end_city_chests",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+  ],
+  "item": "moreapples:enchanted_amethyst_apple"
+}
