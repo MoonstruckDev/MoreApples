@@ -3,8 +3,8 @@
     "icon": {
       "item": "moreapples:enchanted_amethyst_apple"
     },
-    "title": "A Crystal Gem?",
-    "description": "Obtain an amethyst apple.",
+    "title": "I can see colours!",
+    "description": "Obtain an enchanted amethyst apple.",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true

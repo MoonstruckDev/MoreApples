@@ -3,13 +3,13 @@
     "icon": {
       "item": "moreapples:enchanted_diamond_apple"
     },
-    "title": "That's gotta hurt...",
-    "description": "Obtain a diamond apple.",
+    "title": "Shine bright like an Apple!",
+    "description": "Obtain an enchanted diamond apple.",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "moreapples:obtain_apples",
+  "parent": "moreapples:obtain_diamond_apple",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

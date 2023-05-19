@@ -3,13 +3,13 @@
     "icon": {
       "item": "moreapples:enchanted_iron_apple"
     },
-    "title": "Iron Man's Favourite Fruit",
-    "description": "Obtain an iron apple.",
+    "title": "Iron Man 2: Electric Boogaloo",
+    "description": "Obtain an enchanted iron apple.",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "moreapples:obtain_apples",
+  "parent": "moreapples:obtain_iron_apple",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

@@ -3,13 +3,13 @@
     "icon": {
       "item": "moreapples:enchanted_coal_apple"
     },
-    "title": "They Yearn For The Mines",
-    "description": "Obtain a coal apple.",
+    "title": "Please don't eat me...",
+    "description": "Obtain an enchanted coal apple.",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "moreapples:obtain_apples",
+  "parent": "moreapples:obtain_coal_apple",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

@@ -1,10 +1,11 @@
 {
   "display": {
     "icon": {
-      "item": "moreapples:amethyst_apple"
+      "item": "moreapples:lapis_apple"
     },
-    "title": "A Crystal Gem?",
-    "description": "Obtain an Amethyst Apple",
+
+    "title": "Tastes like blue raspberry!",
+    "description": "Obtain a Lapis Apple.",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
@@ -18,7 +19,7 @@
           "items": [
             {
               "items": [
-                "moreapples:amethyst_apple"
+                "moreapples:lapis_apple"
               ]
             }
           ]
@@ -29,3 +30,4 @@
       "experience": 50
     }
   }
+

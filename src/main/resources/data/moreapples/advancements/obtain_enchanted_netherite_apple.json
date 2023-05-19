@@ -3,13 +3,13 @@
     "icon": {
       "item": "moreapples:enchanted_netherite_apple"
     },
-    "title": "Paint it black!",
-    "description": "Obtain a netherite apple.",
+    "title": "Is this really worth it?",
+    "description": "Obtain an enchanted netherite apple.",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "moreapples:obtain_apples",
+  "parent": "moreapples:obtain_netherite_apple",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

@@ -3,13 +3,13 @@
     "icon": {
       "item": "moreapples:enchanted_copper_apple"
     },
-    "title": "Finally! A good use for copper!",
-    "description": "Obtain a copper apple.",
+    "title": "Sheldon Copper",
+    "description": "Obtain an enchanted copper apple.",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "moreapples:obtain_apples",
+  "parent": "moreapples:obtain_copper_apple",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

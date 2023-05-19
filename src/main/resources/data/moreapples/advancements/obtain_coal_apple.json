@@ -3,7 +3,7 @@
     "icon": {
       "item": "moreapples:coal_apple"
     },
-    "parent": "moreapples:obtain_apples",
+
     "title": "They Yearn For The Mines",
     "description": "Obtain a Coal Apple.",
     "frame": "task",
@@ -11,6 +11,7 @@
     "announce_to_chat": true,
     "hidden": true
   },
+  "parent": "moreapples:obtain_apples",
   "criteria": {
     "requirement": {
         "trigger": "minecraft:inventory_changed",

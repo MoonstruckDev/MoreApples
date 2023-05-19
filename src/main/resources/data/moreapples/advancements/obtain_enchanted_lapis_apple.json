@@ -3,13 +3,13 @@
     "icon": {
       "item": "moreapples:enchanted_lapis_apple"
     },
-    "title": "Mmmm, tastes like blue raspberry!",
-    "description": "Obtain a lapis apple.",
+    "title": "Windex Apple",
+    "description": "Obtain an enchanted lapis apple.",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "moreapples:obtain_apples",
+  "parent": "moreapples:obtain_lapis_apple",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

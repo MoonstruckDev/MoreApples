@@ -3,13 +3,13 @@
     "icon": {
       "item": "moreapples:enchanted_emerald_apple"
     },
-    "title": "An apple a day keeps the villager away",
-    "description": "Obtain an emerald apple.",
+    "title": "Fair Trade Apples",
+    "description": "Obtain an enchanted emerald apple.",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "moreapples:obtain_apples",
+  "parent": "moreapples:obtain_emerald_apple",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

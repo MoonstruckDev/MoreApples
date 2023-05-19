@@ -3,13 +3,13 @@
     "icon": {
       "item": "moreapples:enchanted_quartz_apple"
     },
-    "title": "They have apples in the nether?!",
-    "description": "Obtain a quartz apple.",
+    "title": "Living the fancy life",
+    "description": "Obtain an enchanted quartz apple.",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "moreapples:obtain_apples",
+  "parent": "moreapples:obtain_quartz_apple",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
