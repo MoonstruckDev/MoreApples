@@ -19,7 +19,7 @@ modId= "moreapples" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 # ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
 # see the associated build.gradle script for how to populate this completely automatically during a build
-version="${file.jarVersion}" #"0.0.1-1.19.2" #mandatory
+version="${1.0.0-1.19.2}" #"0.0.1-1.19.2" #mandatory
  # A display name for the mod
 displayName="More Apples" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
@@ -28,8 +28,6 @@ displayName="More Apples" #mandatory
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="moreapples.png" #optional
-# A text field displayed in the mod UI
-credits="" #optional
 # A text field displayed in the mod UI
 authors="MoonstruckLucii" #optional
 # Display Test controls the display for your mod in the server connection screen
@@ -41,8 +39,7 @@ authors="MoonstruckLucii" #optional
 #displayTest="MATCH_VERSION" # MATCH_VERSION is the default if nothing is specified (#optional)
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''Ever felt like there wasn't enough ore based apples? well I've got you covered!
-'''
+description='''Ever felt like there wasn't enough ore based apples? well I've got you covered!'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.moreapples]] #optional
     # the modid of the dependency
