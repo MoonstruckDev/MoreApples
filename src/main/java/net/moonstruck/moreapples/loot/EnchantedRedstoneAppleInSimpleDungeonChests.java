@@ -28,7 +28,7 @@ public class EnchantedRedstoneAppleInSimpleDungeonChests extends LootModifier {
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() >= 0.1f) {
+        if(context.getRandom().nextFloat() <= 0.1f) {
             generatedLoot.add(new ItemStack(item, 1));
         }
 
